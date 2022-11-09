@@ -28,7 +28,7 @@ public class EmpresaController {
     private ResponseEntity<ArrayList<Empresa>> getAll() {
         return ResponseEntity.ok(empresaService.getAll());
     }
-    
+
     @PostMapping
     private ResponseEntity<Object> save(@RequestBody Empresa obj) {
         try {
