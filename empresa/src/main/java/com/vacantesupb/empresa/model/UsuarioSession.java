@@ -6,6 +6,7 @@ public class UsuarioSession {
     private String token;
     private String idUsuario;
     private String correo;
+    private String usuario;
     private String nombre;
 
     public UsuarioSession() {
@@ -33,6 +34,14 @@ public class UsuarioSession {
 
     public void setCorreo(String correo) {
         this.correo = correo;
+    }
+
+    public String getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
     }
 
     public String getNombre() {
