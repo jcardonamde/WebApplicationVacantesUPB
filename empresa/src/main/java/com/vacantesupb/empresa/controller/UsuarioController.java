@@ -21,7 +21,11 @@ public class UsuarioController {
     //@PostMapping("login")
     //Creo metodo de logueo usando la consulta tipo form generico
     public UsuarioSession loginToken(@RequestParam(value = "usuario") String usuario, @RequestParam(value = "contrasena") String contrasena) {
+<<<<<<< HEAD
         String token = "qwertyuioasdfghjk456123";
+=======
+        String token = "sdsdsajdkajdksjakdja";
+>>>>>>> 346862ebe05bf6741cd550542e4780a2dfbe86cf
         //Creo un nuevo objeto usuario sesión
         UsuarioSession us = new UsuarioSession();
         us.setIdUsuario("10376136678798");
@@ -35,7 +39,12 @@ public class UsuarioController {
     @PostMapping("login")
     //Creo metodo de logueo usando la consulta de Tipo JSON
     public UsuarioSession loginToken2(@RequestBody Usuario usr) {
+<<<<<<< HEAD
         //String token = "qwertyuioasdfghjk456123";
+=======
+        //String token = "sdsdsajdkajdksjakdja";
+        
+>>>>>>> 346862ebe05bf6741cd550542e4780a2dfbe86cf
         //Creo un nuevo objeto usuario sesión
         String token = getJWTToken(usr.getUsuario());
         String user = usr.getUsuario();
@@ -76,4 +85,8 @@ public class UsuarioController {
                         claveSecreta.getBytes()).compact();
         return token;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 346862ebe05bf6741cd550542e4780a2dfbe86cf
